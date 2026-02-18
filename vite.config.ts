@@ -5,5 +5,6 @@ import tsconfigpaths from "vite-tsconfig-paths";
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: "/lineageviewer/",
   plugins: [react(), tailwindcss(), tsconfigpaths()],
 });
