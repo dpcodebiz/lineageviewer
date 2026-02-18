@@ -85,7 +85,12 @@ export function AddProjectSheet({ open, onClose }: Props) {
 
   return (
     <>
-      <Sheet open={open} onOpenChange={() => onClose()}>
+      <Sheet
+        open={open}
+        onOpenChange={(o) => {
+          if (!o) onClose();
+        }}
+      >
         <SheetContent>
           <SheetHeader>
             <SheetTitle>New project</SheetTitle>
