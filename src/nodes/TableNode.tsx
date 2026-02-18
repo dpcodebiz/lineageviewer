@@ -32,7 +32,9 @@ export default function TableNode(node: ZNode) {
             <div
               className={clsx(
                 "px-3 py-1 rounded-xl w-max my-auto h-max",
-                wDefaultStyles[table.warehouse?.order ?? 0] ?? wDefaultStyles[0]
+                wDefaultStyles[
+                  (table.warehouse?.order ?? 0) % wDefaultStyles.length
+                ] ?? wDefaultStyles[0]
               )}
             >
               {table.warehouse?.name}
