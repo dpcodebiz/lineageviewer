@@ -6,7 +6,7 @@ This tool has been built initially as an alternative to Timextender's native lin
 
 Example:
 
-> A browser-based tool to import XML metadata projects, parse them into structured models, and explore them visually.
+> Images coming soon!
 
 ---
 
