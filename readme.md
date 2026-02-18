@@ -1,12 +1,16 @@
-# 📊 Lineage viewer
+![Preview](docs/assets/preview.gif)
 
-Lineage exploration tool for Data pipelines.
+# Lineage viewer
+
+Lineage exploration tool for data pipelines using React Flow.
 
 This tool has been built initially as an alternative to Timextender's native lineage viewer, however the tool can easily be adapted to fit other use cases: Power BI, Qlik, etc.
 
 Example:
 
-> Images coming soon!
+![Simple pipeline](docs/assets/preview-simple.png)
+![Fields details](docs/assets/preview-fields.png)
+![Complex pipeline](docs/assets/preview-full.png)
 
 ---
 
@@ -20,8 +24,6 @@ Example:
 - ✅ Compare multiple table or field lineages at the same time
 - 😍 Clean, modern and visual interface
 
----
-
 ## 🧱 Architecture Overview
 
 High-level explanation of how it works:
@@ -31,15 +33,11 @@ High-level explanation of how it works:
 3. Project is opened inside the viewer and layout is done with ElkJS -> `src/viewer/` & `src/lib/`
 4. Lineage is computed whenever settings change or a new selection is made -> `src/data/`
 
----
-
 ## 🛠 Tech Stack
 
 - **Frontend**: Vite, React, TypeScript, Tailwindcss, Shadcn, Reactflow
 - **Storage**: IndexedDB
 - **Parsing**: DOMParser (browser-native)
-
----
 
 ## 📦 Installation
 
@@ -50,8 +48,6 @@ npm install
 npm run dev
 ```
 
----
-
 ## Disclaimer
 
-Code has been cleaned a little bit to prepare for this public release but further refactoring is more than welcome. Extensive user testing has been done, however bugs may still be present as there is no unit testing (please contribute ☺️).
+Code has been cleaned a little bit to prepare for this public release but further refactoring is more than welcome. Extensive user testing has been done, however bugs may still be present as there is no unit testing (please contribute ☺️). Also, everything shown in the examples is from real projects but references have been replaced with fake names for security concerns.
