@@ -51,3 +51,5 @@ npm run dev
 ## Disclaimer
 
 Code has been cleaned a little bit to prepare for this public release but further refactoring is more than welcome. Extensive user testing has been done, however bugs may still be present as there is no unit testing (please contribute ☺️). Also, everything shown in the examples is from real projects but references have been replaced with fake names for security concerns.
+
+Provided under MIT License (see license)
